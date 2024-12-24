@@ -67,7 +67,7 @@ void UART_ISR(void) interrupt 4
 uint memread(void)
 {
     start_bit();
-    tx_byte(0xB4);
+    tx_byte(0x00);
     tx_byte(0x07);
     start_bit();
     tx_byte(0x01);
